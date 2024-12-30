@@ -1,0 +1,46 @@
+name: capstone2
+description: 하루에 하나씩 질문을 답변하는 앱
+
+# 버전 및 환경 설정
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase와 Firestore
+  firebase_core: ^2.11.0
+  firebase_auth: ^4.20.0  # 버전을 4.20.0으로 다운그레이드
+  cloud_firestore: ^4.10.0
+  firebase_storage: ^11.0.0
+
+  # 사용자 인증과 이미지 업로드 등 추가 패키지
+  google_sign_in: ^6.1.0
+  image_picker: ^0.8.7+4
+  firebase_analytics: ^10.3.0
+
+  # State management
+  provider: ^6.1.2
+
+  # 날짜 선택 위젯
+  table_calendar: ^3.0.8
+
+  # 로딩 애니메이션
+  flutter_spinkit: ^5.1.0
+
+  # 기타 유틸리티
+  intl: ^0.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # 이미지 리소스 추가
+  assets:
+    - lib/assets/logo.png
